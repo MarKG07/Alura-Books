@@ -2,9 +2,66 @@
     width: 24px;
     height: 24px;
     background-image: url("../img/Menu.svg");
-    display: inline-block; /*precisa ter esse display para que apareça na tela*/
+    display: inline-block;
+    /*precisa ter esse display para que apareça na tela*/
+    background-repeat: no-repeat;
+    /*não repete ao passar do tamanho pre colocado*/
+    background-position: center;
+    /*mantem no centro*/
 }
 
 .cabecalho {
     background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+.lista__menu {
+    display: none;
+    position: absolute;
+    /*fica absoluto em relação ao elemento pai que tenha position relative*/
+    top: 100%;
+    /*tirou 100% do cabeçalho e ficou abaixo dele*/
+    width: 60vw;
+    /*faz o menu ocupar mais espaço*/
+}
+
+.container__botao:checked~.lista__menu {
+    /*Se o checkbox for true o lista__menu fica com display block*/
+    display: block;
+}
+
+.lista_menu__titulo,
+.lista_menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista_menu__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista_menu__link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    /*faz o background funcionar apenas no texto do link*/
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.container__botao {
+    display: none;
 }
