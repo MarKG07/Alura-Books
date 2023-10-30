@@ -1,4 +1,5 @@
-@import url("header.css"); /*carrega o header junto*/
+@import url("header.css"); /*carrega junto*/
+@import url("banner.css");
 
 :root {
     --cor-de-fundo: #EBECEE;
