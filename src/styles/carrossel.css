@@ -52,7 +52,7 @@
     font-weight: 700;
 }
 
-.decricao__titulo_livro {
+.descricao__titulo_livro {
     color: var(--azul);
     font-size: 18px;
     font-weight: 700;
@@ -73,4 +73,12 @@
     color: var(--branco);
     font-weight: 700;
     text-decoration: none;
+}
+
+.descricao__estrelas {
+    padding-bottom: .5em;
+}
+
+.descricao-autor {
+    padding-right: .5em;
 }
